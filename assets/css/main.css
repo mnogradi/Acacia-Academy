@@ -2553,7 +2553,7 @@ input, select, textarea {
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #b74e91;
+					color: #af57af;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
@@ -3241,15 +3241,15 @@ input, select, textarea {
 		}
 
 .wrapper.style1 {
-	background-color: #5f6262;
+	background-color: #606666;
 }
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #312450;
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #606666;
 		}
 
 		.wrapper.style2-alt {
@@ -3859,7 +3859,7 @@ input, select, textarea {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #b74e91;
+							background-color: #926f99;
 						}
 
 		}

@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #6f787a;
+		background: #9aa89c;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1836,7 +1836,7 @@ input, select, textarea {
 		border: solid 1px !important;
 		border-color: rgba(255, 255, 255, 0.15) !important;
 		border-radius: 3em;
-		color: #ffffff !important;
+		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
@@ -1966,7 +1966,7 @@ input, select, textarea {
 			input[type="button"]:hover:active,
 			button:hover:active,
 			.button:hover:active {
-				border-color: #ffffff !important;
+				border-color: #ffffff;
 			}
 
 				input[type="submit"]:hover:active:after,
@@ -2553,7 +2553,7 @@ input, select, textarea {
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #c37ec3;
+					color: #204a2f;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
@@ -3244,7 +3244,7 @@ input, select, textarea {
 		}
 
 .wrapper.style1 {
-	background-color: #6f787a;
+	background-color: #9aa89c;
 }
 
 
@@ -3257,11 +3257,11 @@ input, select, textarea {
 		}
 
 		.wrapper.style2-alt {
-			background-color: #3e4094;
+			background-color: #6195f0;
 		}
 
 .wrapper.style3 {
-	background-color: #4a607e;
+	background-color: #365056;
 }
 
 		.wrapper.style3-alt {
@@ -3915,10 +3915,31 @@ input, select, textarea {
 		}
 		#Sofia {
 			font-family: "Sofia";
-			
+			font-size: 4em;
+			color: black;
+		}
+		#head {
+			color: black;
+			border-color: black !important;
 		}
 		
 		#Aref {
 			font-family: "Aref Ruqaa Ink"
+		}
+		#different_color p{
+			color: rgba(0, 0, 0, 0.55);
+		}
+		#different_color{
+			color: black;
+			
+		}
+		#different_color a {
+			-moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+			-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+			-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+			transition: color 0.2s ease, border-bottom-color 0.2s ease;
+			border-bottom: dotted 1px rgba(0, 0, 0, 0.35);
+			color: inherit;
+			text-decoration: none;
 		}
 		

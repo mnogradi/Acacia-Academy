@@ -1840,7 +1840,7 @@ input, select, textarea {
 		transition: border-color 0.2s ease;
 		background-color: transparent;
 		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.15) !important;
+		border-color: rgba(255, 255, 255, 0.15);
 		border-radius: 3em;
 		color: #ffffff;
 		cursor: pointer;
@@ -1972,7 +1972,7 @@ input, select, textarea {
 			input[type="button"]:hover:active,
 			button:hover:active,
 			.button:hover:active {
-				border-color: #ffffff;
+				border-color: rgba(255, 255, 255, 0.20);
 			}
 
 				input[type="submit"]:hover:active:after,
@@ -3926,11 +3926,15 @@ input, select, textarea {
 		}
 		#head {
 			color: black;
-			border-color: black !important;
+			
 		}
 		
 		#Aref {
 			font-family: "Aref Ruqaa Ink";
 		}
-		
-		
+		.accepting {
+			color: black !important;
+			border-radius: 0%;
+			font-weight: bold;
+			font-size: small;
+		}

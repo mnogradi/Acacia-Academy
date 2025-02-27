@@ -153,6 +153,7 @@ input, select, textarea {
 		transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
 		color: inherit;
+		font-weight: bold;;
 		text-decoration: none;
 	}
 

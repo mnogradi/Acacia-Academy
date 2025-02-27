@@ -3751,7 +3751,7 @@ input, select, textarea {
 			border: 0;
 			color: rgba(255, 255, 255, 0.35);
 			display: block;
-			font-size: 0.6em;
+			font-size: 0.75em;
 			font-weight: bold;
 			letter-spacing: 0.25em;
 			line-height: 1.75;
@@ -3928,13 +3928,21 @@ input, select, textarea {
 			color: black;
 			
 		}
-		
+		#three {
+			background-color: #999586;
+			color: black;
+		}
+		.blackText {
+			color: black !important;
+		}
 		#Aref {
 			font-family: "Aref Ruqaa Ink";
 		}
 		.accepting {
 			color: black !important;
-			border-radius: 0%;
+			margin-top: 10%;
+			border-radius: 20%;
 			font-weight: bold;
 			font-size: small;
 		}
+		

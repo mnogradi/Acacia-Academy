@@ -3929,8 +3929,13 @@ input, select, textarea {
 			
 		}
 		#three {
-			background-color: #999586;
+			background-color: #c2bdb4;
 			color: black;
+			background-attachment: fixed;
+			background-image: url("images/intro.svg");
+			background-position: top right;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
 		}
 		.blackText {
 			color: black !important;

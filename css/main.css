@@ -53,6 +53,13 @@ a {
     align-items: center;
 }
 
+.pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
 /* Navigation */
 nav {
     position: fixed;
@@ -618,4 +625,7 @@ footer {
         gap: 1.5rem; 
         text-align: center; 
     }
+
+    /* Pricing Grid */
+    .pricing-grid { grid-template-columns: 1fr; }
 }

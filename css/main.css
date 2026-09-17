@@ -303,7 +303,7 @@ nav .container {
 /* Music Section */
 .music-grid {
     display: grid;
-    grid-template-cols: 1.2fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     gap: 6rem;
     align-items: start;
 }

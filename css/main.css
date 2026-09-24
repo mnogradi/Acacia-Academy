@@ -738,11 +738,11 @@ footer {
 
 /* Connected Mobile Accordion Component */
 .desktop-only-table {
-    display: table;
+    display: table !important;
 }
 
 .mobile-only-accordion {
-    display: none;
+    display: none !important;
 }
 
 .study-accordion {

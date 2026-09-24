@@ -15,12 +15,16 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
 body {
     background-color: var(--ivory);
     color: var(--midnight);
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     line-height: 1.6;
-    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -55,7 +59,7 @@ a {
 
 .pricing-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     align-items: stretch;
 }
@@ -627,7 +631,7 @@ footer {
     }
 
     /* Pricing Grid */
-    .pricing-grid { grid-template-columns: 1fr; }
+    .pricing-grid { grid-template-columns: 1fr !important; }
 }
 
 /* Philosophy Callout */
@@ -732,6 +736,120 @@ footer {
     margin-top: 0.4rem;
 }
 
+/* Connected Mobile Accordion Component */
+.desktop-only-table {
+    display: table;
+}
+
+.mobile-only-accordion {
+    display: none;
+}
+
+.study-accordion {
+    width: 100%;
+    background: white;
+}
+
+.study-accordion-header {
+    background: var(--pale-blue);
+    color: white;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.study-accordion-sub {
+    font-size: 0.7rem;
+    font-weight: 400;
+    opacity: 0.75;
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+.study-accordion-item {
+    border-bottom: 1px solid var(--border-color);
+    transition: background 0.2s ease;
+}
+
+.study-accordion-item:nth-child(even) {
+    background: #fdfbf7;
+}
+
+.study-accordion-item:last-child {
+    border-bottom: none;
+}
+
+.study-accordion-summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.study-accordion-summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-chevron {
+    font-size: 1.1rem;
+    color: var(--midnight);
+    transition: transform 0.25s ease;
+}
+
+.study-accordion-item[open] .accordion-chevron {
+    transform: rotate(180deg);
+}
+
+.study-accordion-content {
+    padding: 0 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.accordion-sub-row {
+    background: white;
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-left: 3px solid #cbd5e1;
+}
+
+.accordion-sub-row.accent-depth {
+    border-left-color: var(--dawn-gold);
+    background: #fffdf9;
+}
+
+.accordion-sub-label {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--midnight);
+    margin-bottom: 0.35rem;
+}
+
+.accordion-sub-row.accent-depth .accordion-sub-label {
+    color: #8a6a23;
+}
+
+.accordion-sub-row p {
+    font-size: 0.92rem;
+    color: var(--slate);
+    line-height: 1.6;
+    margin: 0;
+}
+
 /* Music in History Spotlight Section */
 .history-spotlight-box {
     background: #ffffff;
@@ -799,9 +917,23 @@ footer {
     .history-spotlight-box {
         padding: 2.5rem 1.5rem;
     }
-    .study-table th, .study-table td {
-        padding: 1rem;
+    
+    /* Connected Accordion for Electives on Mobile */
+    .desktop-only-table {
+        display: none !important;
     }
+
+    .mobile-only-accordion {
+        display: block !important;
+    }
+
+    .study-table-container {
+        overflow: hidden;
+        border: 1px solid var(--border-color);
+        background: white;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    }
+
     .resource-showcase-card {
         grid-template-columns: 1fr !important;
         padding: 2rem 1.5rem !important;

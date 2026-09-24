@@ -802,6 +802,14 @@ footer {
     .study-table th, .study-table td {
         padding: 1rem;
     }
+    .resource-showcase-card {
+        grid-template-columns: 1fr !important;
+        padding: 2rem 1.5rem !important;
+        gap: 2.5rem !important;
+    }
+    .resource-tips-grid {
+        grid-template-columns: 1fr !important;
+    }
 }
 
 

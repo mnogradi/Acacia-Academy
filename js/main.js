@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <a href="index.html" class="mobile-nav-link">Home</a>
                     <a href="about.html" class="mobile-nav-link">About</a>
                     <a href="lessons.html" class="mobile-nav-link">Lessons</a>
+                    <a href="resources.html" class="mobile-nav-link">Resources</a>
                     <a href="index.html#contact" class="mobile-nav-link">Inquire</a>
                 </div>
             </div>
